@@ -1,52 +1,57 @@
-"use strict";
-//Assignment 11
-//Greetings: Start with the array you used in Exercise 10, but instead of just printing each person’s name, print a message to them. The text of each message should be the same, but each message should be personalized with the person’s name.
-/*let Names:string[]= ["Sara","Ali","Faizan","Haroon"]
-let message: string= "Do you like to play cricket?"
-console.log(Names[0] +" "+message)
-console.log(Names[1] +" "+message)
-console.log(Names[2] +" "+message)
-console.log(Names[3] +" "+message)*/
-//Assignment 12
-//Your Own Array: Think of your favorite mode of transportation, such as a motorcycle or a car, and make a list that stores several examples. Use your list to print a series of statements about these items, such as “I would like to own a Honda motorcycle.”
-/*let transportation:string[]=["Honda civic","toyota corolla","Cultus"]
-transportation.map((items) =>
- console.log(`I would like to own ${items}`))*/
-//Assignment 13
-//Guest List: If you could invite anyone, living or deceased, to dinner, who would you invite? Make a list that includes at least three people you’d like to invite to dinner. Then use your list to print a message to each person, inviting them to dinner.
-/*let Guest:string[]=["Sara","Fatima","Yusra"]
-Guest.map((items) =>
-console.log(`Dear ${items}! you are invited for the dinner today.`)
-)*/
-//Assignment 14
-//Changing Guest List: You just heard that one of your guests can’t make the dinner, so you need to send out a new set of invitations. You’ll have to think of someone else to invite.
-/*let Guest:string[]=["Sara","Fatima","Faizan","Haroon"]
-let cannotAttend:string = "Sara"
-console.log(cannotAttend +" "+ "can not attend dinner")
-let newGuest:string= "Aisha"
-Guest[Guest.indexOf(cannotAttend)]= newGuest
-console.log(Guest)
-Guest.map((items)=> console.log(`Dear ${items} "you are invited for dinner today`))*/
-//Assignment 15
-//More Guests: You just found a bigger dinner table, so now more space is available. Think of three more guests to invite to dinner.
-//• Start with your program from Exercise 15. Add a print statement to the end of your program informing people that you found a bigger dinner table.
-//• Add one new guest to the beginning of your array.
-//• Add one new guest to the middle of your array. • Use append() to add one new guest to the end of your list. • Print a new set of invitation messages, one for each person in your list.let Guest:string[]=["Aisha","Fatima","Sara","Faizan"]
-//Part1
-/*let Guest:string[]=["Aisha","Fatima","Sara","Faizan"]
-//Guest.map((items)=> console.log(`Dear ${items},I found the biggest dinner table so i am inviting the more people.`))
-//Part2
-let Guestbeg:string = "Haroon"
-Guest.unshift(Guestbeg);
-//console.log(Guest)
-//Part3
-let middleguest:string ="Abdullah"
-let middleindex=Guest.length/2
-Guest.splice(middleindex,0,middleguest)
-//console.log(Guest)
-//Part4
-let endguest:string= "Hassan"
-Guest.push(endguest)
-//console.log(Guest)
-//Part5
-Guest.map((items)=> console.log(`Dear ${items}! you are invited on the biggest dinner table today.`))*/
+//Assignment 16
+//Shrinking Guest List: You just found out that your new dinner table won’t arrive in time for the dinner, and you have space for only two guests.
+//• Start with your program from Exercise 15. Add a new line that prints a message saying that you can invite only two people for dinner.
+//• Remove guests from your list one at a time until only two names remain in your list. Each time you pop a name from your list, print a message to that person letting them know you’re sorry you can’t invite them to dinner.
+//• Print a message to each of the two people still on your list, letting them know they’re still invited.
+//• Remove the last two names from your list, so you have an empty list. Print your list to make sure you actually have an empty list at the end of your program.
+// initial list of people
+//let Guests: string[]=["Abdullah","Sara","Fatima","Yusra","Ali"]
+//informing that only two people can be invited
+//console.log("Due to limited space,only two people can be invited for dinner")
+//removing guests until only two people remains
+//while (Guests.length > 2) {
+//const removedGuests = Guests.pop();
+//console.log(`Sorry ${removedGuests},You are no longer invited to dinner`);
+//}
+//printing message to remaining two people
+//Guests.forEach((Guests) => {
+//console.log(`Dear ${Guests},you are still invited to dinner.`)}
+//})
+//removing the last two guests from the list
+//Guests.pop();
+//Guests.pop();
+//printing final list of guests
+//console.log("Final guests list:",Guests);
+//Assignment 17
+//Seeing the World: Think of at least five places in the world you’d like to visit.
+// Store the locations in a array.
+//let Places:string[] = ["Turkey", "Mauritius","America","Indonesia","Saudi Arabia"]
+//console.log("Original order:",Places);
+//store the array in Alphabetical order.
+//console.log("Alphabetical order:",[...Places].sort());
+//print array still in original order.
+//console.log("Original order after sorting:",Places);
+//print array in reverse Alphabetical order.
+//console.log("reverse alphabetical order:",[...Places].sort().reverse());
+//print array still in original order.
+//console.log("original order after reversing sorting:",Places)
+//reverse the order of list.
+//console.log("reverse order:",Places);
+//print original order array after reversing.
+//console.log("Original order after reversing:",Places) 
+//Assignment 18
+//you could make a list of mountains, rivers, countries, cities, languages, or anything else you’d like. Write a program that creates a list containing these items.
+//let languages : string[]=["English","Urdu","Chineese","Sindhi"]
+//console.log(languages)
+//Assignment 19
+//They think of something you could store in a TypeScript Object. Write a program that creates Objects containing these items.
+//Typescript Object Type;
+//let teacher={name:"Bilqees Shahid", experience:"10"}
+//console.log(teacher.name)
+//console.log(teacher["experience"])
+//Assignment 20
+//Intentional Error: If you haven’t received an array index error in one of your programs yet, try to make one happen. Change an index in one of your programs to produce an index error. Make sure you correct the error before closing the program.
+//Making array Index error:(Printing list of vegetables)
+var veges = ["Tomato", "lettuce", "cucumber", "Peas", "chillies", "Potato"];
+//console.log(veges[6])//index error number 6 index is not assigned
+console.log(veges[3]);

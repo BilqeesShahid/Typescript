@@ -1,0 +1,3 @@
+// src/index.ts
+import { main } from "./cli.js";
+main();
